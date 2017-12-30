@@ -1,0 +1,25 @@
+{
+  "name": "webpack-god-like",
+  "version": "1.0.0",
+  "description": "webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/szy0syz/Webpack-God-Like.git"
+  },
+  "keywords": [
+    "weboack"
+  ],
+  "author": "szy0syz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/szy0syz/Webpack-God-Like/issues"
+  },
+  "homepage": "https://github.com/szy0syz/Webpack-God-Like#readme",
+  "dependencies": {
+    "webpack": "^3.10.0"
+  }
+}
