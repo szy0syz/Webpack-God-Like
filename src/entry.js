@@ -1,0 +1,1 @@
+document.getElementById("title").innerHTML = "Hello Webpack! 2018-01-02";
