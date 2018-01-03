@@ -1,4 +1,6 @@
 const path = require('path');
+const uglify = require('uglifyjs-webpack-plugin')
+const htmlPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: {
@@ -18,7 +20,16 @@ module.exports = {
     ]
   },
   // 插件必须是数组
-  plugins: [],
+  plugins: [
+    new uglify(),
+    new htmlPlugin({
+      minify:{
+          removeAttributeQuotes:true
+      },
+      hash:true,
+      template:'./src/index.html'
+  })
+  ],
   devServer: {
     //监听内容的绝对路径
     contentBase: path.resolve(__dirname, 'dist'),
