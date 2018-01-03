@@ -2,3 +2,9 @@ body{
     background-color: #ccc;
     color: red;
 }
+
+#avatar {
+    background-image: url('../img/avatar.jpg');
+    width: 460px;
+    height: 460px;
+}
