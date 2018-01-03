@@ -1,4 +1,5 @@
-const path = require('path');
+const path = require('path')
+const uglify = require('uglifyjs-webpack-plugin')
 
 module.exports = {
   entry: {
@@ -11,7 +12,9 @@ module.exports = {
   // 模块对象：打包css、转换图片等
   module: {},
   // 插件必须是数组
-  plugins: [],
+  plugins: [
+    new uglify()
+  ],
   devServer: {
     //监听内容的绝对路径
     contentBase: path.resolve(__dirname, 'dist'),
